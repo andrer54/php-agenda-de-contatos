@@ -1,5 +1,5 @@
 <?php
-ob_start();
+//ob_start();
 
 $logar = $_POST['user'];
 $senha = $_POST['senha'];

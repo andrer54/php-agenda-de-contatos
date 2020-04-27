@@ -1,19 +1,24 @@
 <?php
-ob_start();
+//ob_start();
 session_start();
-if($_SESSION['login'] == "andre"){
+if ($_SESSION['login'] == "andre") {
 ?>
 
-<table align="center" border="1">
-    <form name="email" method="POST" action="inserir.php">
-        <tr><td>Nome:</td><input type="text" name="nome"></td></tr>
-        <tr><td>Tel:</td><input type="text" name="telefone"></td></tr>
-        <tr><td><input type="submit" value="inserir"></td></tr>
-</form>
-</table>
+    <div align="center" border="1">
+        <form name="email" method="POST" action="inserir.php">
+            <tr>
+                <td>Nome:<input type="text" name="nome"></td>
+                <td>SobreNome: <input type="text" name="sobrenome" id=""></td>
+                <td>E-mail:<input type="text" name="email"></td>
+                <td>Tel:<input type="text" name="telefone"></td>
+
+            </tr>
+            <input type="submit" value="inserir">
+        </form>
+    </div>
 
 <?php
-}else {
+} else {
     echo "Sem permissões para adicionar ou acessar a página!";
 }
 ?>
