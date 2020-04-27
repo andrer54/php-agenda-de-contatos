@@ -1,2 +1,0 @@
-exemplo da agenda retirado do livro guiaPHP.pdf
-que está na area de trabalho.

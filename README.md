@@ -1,2 +1,2 @@
 # php-agenda-de-contatos
- Simples genda de contatos em php para fins didáticos.
+ Simples agenda de contatos em php para fins didáticos.
