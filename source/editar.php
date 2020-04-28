@@ -2,11 +2,8 @@
 //ob_start();
 session_start();
 if($_SESSION['login'] == "andre"){
-?>
-<?php
 
-$conexao = mysqli_connect("localhost", "andre", '12345') or die ("Não pude conectar: "); //usuario e senha do msql
-$base = mysqli_select_db($conexao, "crud-teste") or die ("Não pude selecionar o banco de dados");
+require_once "connect.php";
 
 $id=$_POST['id'];
 $nome=$_POST['nome'];

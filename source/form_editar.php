@@ -8,12 +8,11 @@
 //ob_start();
 session_start();
 if($_SESSION['login'] == "andre"){
-?>
-<?php
 
 
-$conexao = mysqli_connect("localhost", "andre", '12345') or die ("Não pude conectar: "->mysqli_error()); //usuario e senha do msql
-$base = mysqli_select_db($conexao, "crud-teste") or die ("Não pude selecionar o banco de dados: ");//->mysqli_error());
+
+require_once "connect.php";
+
 $id=$_GET['id'];
 
 $query="SELECT * FROM clientes WHERE id=$id";
