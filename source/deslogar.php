@@ -8,7 +8,7 @@ unset($_SESSION['login']);
 unset($_SESSION['data_login']);
 session_destroy();
 
-header ("Location: logar.php");
+header ("Location: ../logar.htm");
 
 
 ?>

@@ -18,9 +18,9 @@ if ($logar=="andre" && $senha=="x"){
     $_SESSION['login'] = $logar;
     $_SESSION['data_login'] = $data_login;
 
-    header("Location: agenda.php"); //entra na agenda de contatos
+    header("Location: ../agenda.php"); //entra na agenda de contatos
 }
 else {
-    header ("Location: logar.htm"); //volta para tela de login
+    header ("Location: ../logar.htm"); //volta para tela de login
 }
 ?>

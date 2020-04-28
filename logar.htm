@@ -1,31 +1,55 @@
 <!-- Script da tela de login da agenda-->
 <html>
-    <head>
-        <title>Agenda de contatos</title>
-    </head>
-    <body>
-        <br><br><br><br><br>
-        <br><br><br>
-        <center>
-            <table align="center" cellpadding="5" border="1">
-                <form name="logar" action="logar.php" method="POST">
-                    <tr>
-                        <td>User:</td><td><input type="text" name="user"></td>
-                    </tr>
-                    <tr>
-                        <td>Pass:</td><td><input type="password" name="senha"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="right"><input type="submit" name="entrar" value="Entrar"></td>
-                    </tr>
+
+<head>
+    <title>Agenda de contatos</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">Agenda de contatos</a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row" style="padding:10%">
+            <div class="col s12 m4 l4"></div>
+            <div class="col s12 m4 l4">
+                <form name="logar" action="source/logar.php" method="POST">
+
+                    User:<input type="text" name="user">
+
+                    Pass:<input type="password" name="senha"></td><br><br><br>
+                    <center>
+                        <input class="btn" type="submit" name="entrar" value="Entrar">
+                    </center>
                 </form>
-            </table>
-            <br><br><br>
-           
-            <h4>Use o login: </h4>
-            User: andre
-            <br>
-            Pass: x
-        </center>
-    </body>
+                <center>
+
+                    <br>
+
+                    <h4>Use o login: </h4>
+                    User: andre
+                    <br>
+                    Pass: x
+                </center>
+            </div>
+            <div class="col s12 m4 l4"></div>
+        </div>
+
+
+    </div>
+
+</body>
+
 </html>
